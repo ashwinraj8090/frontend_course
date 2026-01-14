@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onresize="changeColor('blue')">
+    <h1 id="myh1" onmouseover="changeColor('red')" onclick="changeColor('yellow')"> 
+        EVENTS IN JS
+    </h1>
+    <script>
+        let h1=document.getElementById("myh1")
+        let changeColor = (color) =>{
+            h1.style.backgroundColor = color
+        }
+        let changeFont = () =>{
+            h1.style.fontFamily = "Impact"
+        }
+        h1.addEventListener('click',changeFont)//changing font on click- this is how event is done in js inside script...in html it should be inside body inside the tag <h1 onclick="changeFont()">
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Hello Everyone!!!!</h2>
+    <p id="p2" class="g1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto rerum est
+        modi quod,
+        praesentium reprehenderit, accusamus quidem a ea quasi nam repellat at sint cumque nesciunt laboriosam earum
+        cupiditate?</p>
+    <h2>Hii Everyone!!!!</h2>
+    <p class="g1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, cupiditate impedit. Laborum
+        debitis, beatae
+        pariatur ratione omnis ea vero voluptas, temporibus aliquid tenetur non repellendus placeat, tempora eos
+        nostrum. Fuga!</p>
+    <button onclick="changeCase()">Change Case</button>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        let changeColor = () => {
+            document.getElementById("p2").style.color = "blue"
+            let eles = document.getElementsByTagName("h2")//there might be so many h2 tags in the document so it returns a collection of all h2 elements thats why we have to loop through the collection to access each element and change style for each element
+            //eles[0].style.color = "green"
+            for (ele of eles) {
+                ele.style.color = "red"
+            }
+        }
+        let changeCase = () => {
+            let elms = document.getElementsByClassName("g1")
+            //elms[0].style.textTransform = "uppercase"
+            for (elm of elms) {
+                elm.style.textTransform = "uppercase"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

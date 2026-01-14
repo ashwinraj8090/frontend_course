@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Initial circular box positioned at bottom-right */
+        #button{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            /* animate shape, color, and movement */
+            transition: background-color 0.5s ease, border-radius 0.5s ease, top 0.6s ease, left 0.6s ease, transform 0.6s ease, right 0.6s ease, bottom 0.6s ease;
+        }
+
+        /* On hover: become square, change color, and move to viewport center */
+        #button:hover{
+            background-color: aqua;
+            border-radius: 0;
+            /* move to center of viewport */
+            top: 50%;
+            left: 50%;
+            right: auto;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+   <div id="button">
+
+   </div> 
+</body>
+</html>

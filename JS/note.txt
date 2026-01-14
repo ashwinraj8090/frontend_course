@@ -1,0 +1,15 @@
+Vanilla JS
+
+JS Engine - V8 , Spidermonkey, Chakra
+ECMA - ECMA Script(ES)
+ES1, ES2---ES6
+ES2020, ES2022, ES2025
+
+
+
+
+
+
+document.quesrySelector('#myh1')
+querySelector - return first match
+querySelectorAll - return all the matches

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="dom">DOM Question</h1>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus ipsum voluptatibus tempora, dolore odit
+        excepturi illum id tenetur maiores consectetur quaerat doloribus incidunt optio, dolorem animi voluptates sint
+        laborum?</p>
+    <button onclick="changeToDarkTheme()">Dark theme</button>
+    <button onclick="changeToLightTheme()">Light theme</button>
+    <button id="showBtn" onclick="showContent()">Show</button>
+    <button id="hideBtn" onclick="hideContent()">Hide</button>
+    <script>
+        let changeToDarkTheme = () => {
+            document.body.style.backgroundColor = "black"
+            document.body.style.color = "white"
+        }
+        let changeToLightTheme = () => {
+            document.body.style.backgroundColor = "white"
+            document.body.style.color = "black"
+        }
+        let showContent = () => {
+            document.getElementById("p1").style.display = "block"
+            document.getElementById("showBtn").style.display = "none"
+            document.getElementById("hideBtn").style.display = "inline";
+        }
+        let hideContent = () => {
+            document.getElementById("p1").style.display = "none"
+            document.getElementById("hideBtn").style.display = "none"
+            document.getElementById("showBtn").style.display = "inline";
+        }
+    </script>
+</body>
+
+</html>

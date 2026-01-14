@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <h1 id="myh1">Hello DOM</h1>
+    <div id="mydiv">
+        <h2>TEST</h2>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quibusdam unde totam tempore beatae doloribus
+        accusantium quas quia neque distinctio minima omnis hic, aspernatur, nulla nam. Iusto sed omnis repudiandae!</p>
+
+    <script>
+        let ele = document.getElementById("myh1")
+        let elm = document.getElementById("mydiv")
+
+        console.log(ele) //prints the whole element
+        console.log(ele.textContent) //prints only the text inside the element
+        ele.textContent = "Hello from JS DOM" //modifies the text inside the element
+        console.log(ele.textContent)
+        ele.innerHTML = "<u>New Content</u>"
+        ele.style.color = "red"
+        ele.style.backgroundColor = "yellow"
+        console.log(ele)
+        function changeBG(color) {
+            elm.style.backgroundColor = color
+        }
+        changeBG("blue")//changes the color of the background of mydiv element to blue
+        function underLine(value) {
+            if (value == true) {
+                elm.style.textDecoration = "underline"
+            }
+            else {
+                elm.style.textDecoration = "none"
+            }
+        }
+        underLine(true)
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+#container
+{
+    font-size: 30px;
+    text-align: center;
+    background-color: lightpink;
+    border: solid black 10px;
+    display: grid;
+    /* justify-content: space-between; */
+    /*justify-content: center;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /*align-items: center;
+    /* flex-wrap: wrap; /* jumb below if there is no space horizontally */
+    /* grid-template-columns: 200px 200px 200x;*/
+    grid-template-rows: 100px 100px 100px; /* for grid layout */
+    grid-template-columns: 100px 100px 100x;
+    /*gap: 30px;/*gap between each grid both vertical and horizontal*/
+    /* justify-items: center;
+    align-items: center; */
+    
+}
+.item
+{  
+    /* width: 100px;
+    height: 100px; */
+    background-color: lightseagreen;
+    border: solid red 5px;
+}
+#item3
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+/* #item1
+{
+    grid-row: 1/2;
+    grid-column: 1/3;
+} */

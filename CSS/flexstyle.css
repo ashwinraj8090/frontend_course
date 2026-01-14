@@ -1,0 +1,53 @@
+#container
+{
+    height: 700px;
+    font-size: 30px;
+    text-align: center;
+    background-color: lightpink;
+    border: solid black 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-wrap: wrap; /* jumb below if there is no space horizontally */
+}
+.item
+{  
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    border: solid red 5px;
+}
+#item1
+{
+    order: 6;
+    flex-shrink: 0;
+    flex-grow: 5;
+}
+#item2
+{
+    order: 5;
+}
+#item3
+{
+    order: 4;
+    /* align-self: start; /* overide the align-items property of the container */
+}
+#item4
+{
+    order: 3;
+}
+#item5
+{
+    order: 2;
+}
+#item6
+{
+    order: 1;
+    /* align-self: end; */
+    flex-shrink: 0;
+    flex-grow: 5;
+}
+
